@@ -25,10 +25,9 @@ Dbf=
 
 [Editor]
 D:\Sistemas\Calculadora\Calculadora.prg=1,N,Y
-D:\Sistemas\Calculadora\Funcoes.prg=2,N,N
 
 [Files]
-%HOME%\Calculadora.prg=1,.F.,52,39,
+%HOME%\Calculadora.prg=1,.F.,86,14,
 %HB_LIB_INSTALL%\tipssl.lib=2,.T.,0,0,
 %HB_LIB_INSTALL%\libeay32.lib=3,.T.,0,0,
 %HB_LIB_INSTALL%\ssleay32.lib=4,.T.,0,0,
