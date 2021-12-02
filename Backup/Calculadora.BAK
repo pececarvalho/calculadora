@@ -1,6 +1,6 @@
 ****************************************************************************************************
 * CALCULADORA.prg
-* by Paulo Cesar de Carvalho
+* BY: Paulo Cesar de Carvalho
 * Novembro de 2021
 ****************************************************************************************************
 #include 'Fivewin.ch'
@@ -61,7 +61,7 @@ LOCAL oDlgCalc,;
    @ 7.4,  11 BUTTON oBtn[15] PROMPT "3"      SIZE  30,30 OF oDlgCalc ACTION Tecla_Func('3')
    @ 7.4,16.5 BUTTON oBtn[16] PROMPT "/"      SIZE  30,30 OF oDlgCalc ACTION Tecla_Func('/')
 
-   @ 9.2,   0 BUTTON oBtn[17] PROMPT "0"      SIZE  60,30 OF oDlgCalc ACTION Tecla_Func('0')
+   @ 9.2,   0 BUTTON oBtn[17] PROMPT "0"      SIZE  62,30 OF oDlgCalc ACTION Tecla_Func('0')
    @ 9.2,  11 BUTTON oBtn[18] PROMPT ","      SIZE  30,30 OF oDlgCalc ACTION Tecla_Func(',')
    @ 9.2,16.5 BUTTON oBtn[19] PROMPT "="      SIZE  30,30 OF oDlgCalc ACTION Tecla_Func('=')
 
