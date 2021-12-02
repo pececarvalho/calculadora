@@ -2,7 +2,7 @@
  * xHarbour 1.2.3 Intl. (SimpLex) (Build 20150518)
  * Generated C source code from <Calculadora.prg>
  * Command: Calculadora.prg /m /n /gc0 /es2 /iC:\Language\Fwh\Include;C:\Language\Sqllib\Include;C:\Language\xHarbour\Include;C:\Language\Borland\Include /iC:\Language\xHarbour\Include /q /oObj\Calculadora.c 
- * Created: 2021.12.02 17:09:47 (Borland C++ 5.8.2 (32-bit))
+ * Created: 2021.12.02 17:16:51 (Borland C++ 5.8.2 (32-bit))
  */
 
 #include "hbvmpub.h"
@@ -12,7 +12,7 @@
 
 /* Forward declarations of all PRG defined Functions. */
 HB_FUNC_INIT( START );
-HB_FUNC( _MAIN );
+HB_FUNC( MAIN );
 HB_FUNC_STATIC( TECLA_FUNC );
 HB_FUNC_EXIT( HALT );
 HB_FUNC_INITSTATICS();
@@ -62,7 +62,7 @@ HB_INIT_SYMBOLS_BEGIN( hb_vm_SymbolInit_CALCULADORA )
 { "HB_LANGSELECT", {HB_FS_PUBLIC}, {HB_FUNCNAME( HB_LANGSELECT )}, NULL },
 { "SETGETCOLORFOCUS", {HB_FS_PUBLIC}, {HB_FUNCNAME( SETGETCOLORFOCUS )}, NULL },
 { "SKINBUTTONS", {HB_FS_PUBLIC}, {HB_FUNCNAME( SKINBUTTONS )}, NULL },
-{ "_MAIN", {HB_FS_PUBLIC | HB_FS_LOCAL | HB_FS_FIRST}, {HB_FUNCNAME( _MAIN )}, &ModuleFakeDyn },
+{ "MAIN", {HB_FS_PUBLIC | HB_FS_LOCAL | HB_FS_FIRST}, {HB_FUNCNAME( MAIN )}, &ModuleFakeDyn },
 { "NEW", {HB_FS_PUBLIC}, {NULL}, NULL },
 { "TDIALOG", {HB_FS_PUBLIC}, {HB_FUNCNAME( TDIALOG )}, NULL },
 { "NOR", {HB_FS_PUBLIC}, {HB_FUNCNAME( NOR )}, NULL },
@@ -118,7 +118,7 @@ HB_FUNC_INIT( START )
    hb_vmExecute( pcode, symbols );
 }
 
-HB_FUNC( _MAIN )
+HB_FUNC( MAIN )
 {
    static const BYTE pcode[] =
    {

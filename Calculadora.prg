@@ -1,6 +1,6 @@
 ****************************************************************************************************
-* Calculadora.prg
-* by Paulo Cesar de Carvalho
+* CALCULADORA.prg
+* BY: Paulo Cesar de Carvalho
 * Novembro de 2021
 ****************************************************************************************************
 #include 'Fivewin.ch'
@@ -29,7 +29,7 @@ INIT PROCEDURE Start
 
 RETURN
 ****************************************************************************************************
-FUNCTION _Main()
+FUNCTION Main()
 LOCAL oDlgCalc,;
       oBtn[20]
 
@@ -37,6 +37,7 @@ LOCAL oDlgCalc,;
 
    DEFINE DIALOG oDlgCalc FROM 1, 1 TO 27, 33.8 TITLE "Calculadora" ;
           STYLE nOr( DS_MODALFRAME, WS_POPUP, WS_CAPTION, WS_SYSMENU, 4 ) COLORS CLR_BLUE FONT aFonteCpa12
+
    @ 0.3,  0  SAY oSay[1]     PROMPT cSinal   SIZE   20,10 OF oDlgCalc COLORS CLR_WHITE, CLR_BLACK
    @ 0.3,  0  SAY oSay[2]     PROMPT cDisplay SIZE  130,30 OF oDlgCalc COLORS CLR_WHITE, CLR_BLACK FONT aFonteCpa16 RIGHT
 
