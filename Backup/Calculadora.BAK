@@ -101,7 +101,11 @@ STATIC cResult
           oSay[2]:Refresh()
 
    ELSEIF cTecla = '/'
-          cDisplay := AllTrim(Str(cResult)) + '/'
+          IF !Empty(cResult) .AND. ValType(cResult)='N'
+             cDisplay := AllTrim(Str(cResult)) + '/'
+          ELSE
+             cDisplay += '/'
+          ENDIF
           oSay[2]:Varput(cDisplay)
           oSay[2]:Refresh()
 
